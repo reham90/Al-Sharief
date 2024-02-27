@@ -18,8 +18,8 @@ a:hover {
 }
 
 :root {
-	--main-color: #4e4e4e;
-	--main-hover: #c4161c;
+	--main-color: #08064b;
+	--main-hover: rgb(222, 198, 13);
 }
 
 img {
@@ -469,7 +469,7 @@ html[dir="ltr"] .first-level-link:after {
 	width: 100%;
 	z-index: 2;
 	background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(196,22,28,0.5523459383753502) 100%);
+background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(8,6,75,1) 100%);
 }
 
 .main-caption-div {
@@ -714,7 +714,7 @@ html[dir="ltr"] .caption-title {
 	content: "";
 	
 	background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(196,22,28,0.5523459383753502) 100%);
+background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(8,6,75,1) 100%);
 	width: 100%;
 	top:0;
 	border-radius: 0;
@@ -1129,8 +1129,15 @@ html[dir="rtl"] .why-us-section {
 .news-slider {
 	position: relative;
 }
-
-
+.certificates-slider {
+	position: relative;
+}
+.mb-20{
+	margin-bottom: 20px !important;
+}
+.certificates-img-block{
+	height: 360px !important;
+}
 .news-img-block {
 	width: 360px;
 	height: 200px;
@@ -1548,8 +1555,14 @@ html[dir="rtl"] .footer-accordion.active:after {
 	.fixed-nav .menu-item-has-children a:hover {
 		color: var(--main-hover) !important;
 	}
+	.mb-20{
+		margin-bottom: 0 !important;
+	}
 .menu-item-has-children a:hover{
 	color: var(--main-hover) !important;
+}
+.certificates{
+	margin-top: 30px;
 }
 .nav-header li a:hover{
 	color: var(--main-hover);
@@ -1897,7 +1910,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 	}
 
 	.show-icons .menu-bars .bar {
-		color: #4e4e4e;
+		color: var(--main-hover);
 	}
 
 	.show-icons .menu-bars .times {
