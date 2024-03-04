@@ -628,7 +628,74 @@ html[dir="ltr"] .caption-title {
 	text-align: center;
 	margin: 0 0 32px;
 }
+/* breadcrumb-section */
+.breadcrumb-section {
+	position: relative;
+	background: rgb(233,205,176);
+background: linear-gradient(0deg, rgba(233,205,176,1) 42%, rgba(155,169,177,1) 100%);
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	margin-top: 80px;
+	padding: 48px 0 100px;
+  }
+  .breadcrumb-head {
+	font-size: 24px;
+	color: var(--main-color);
+	font-family: "Frutiger LT Arabic 65 Bold";
+	margin: 0 0 15px;
+	text-transform: capitalize;
+  }
+  .breadcrumb {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+  }
+  .bread-link, .bread-current, .breadcrumb li {
+	text-transform: capitalize;
+	font-size: 14px;
+	color: var(--main-color);
+	font-family: "Frutiger LT Arabic 45 Light";
+	text-decoration: none;
+  }
+  .bread-link:hover {
+	color: #f4f5f5;
+  }
+  .breadcrumb li:not(.active):after {
+	content: "/";
+	padding: 0 7px;
+  }
+  /* breadcrumb-section */
+  .about-content-section{
+	padding: 70px 0;
 
+  }
+  .inner-page .fixed-header .big-menu li a{
+	color: #fff;
+  }
+  .about-paragraph{
+	margin-top: 30px;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 17px;
+    color: #000;
+  }
+.inner-page .top-header{
+	background-color: var(--main-color);
+}
+.inner-page .top-header:hover .big-menu li a{
+	color: #fff;
+}
+.inner-page .top-header:hover .sub-menu li a{
+	color: #000;
+}
 .about-grid {
 	display: grid;
 	grid-template-columns: 25% 30% 15% 25%;
@@ -1842,9 +1909,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 		padding-inline-start: calc((100vw - 930px) / 2);
 	}
 
-	.about-paragraph {
-		max-width: 425px;
-	}
+	
 
 	.news-img-block {
 		width: auto;
@@ -2243,9 +2308,7 @@ html[dir="rtl"] .footer-accordion.active:after {
 		max-width: 300px;
 	}
 
-	.about-paragraph {
-		max-width: 300px;
-	}
+	
 
 	.news-grid-content {
 		display: grid;
