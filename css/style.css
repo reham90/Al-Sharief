@@ -753,7 +753,15 @@ background: linear-gradient(0deg, rgba(233,205,176,1) 42%, rgba(155,169,177,1) 1
   /* breadcrumb-section */
   .about-content-section{
 	padding: 70px 0;
+	margin-top: 80px;
 
+  }
+  .page-title{
+	color: var(--main-color);
+	font-size: 30px;
+	margin: 0 0 30px;
+	text-align: center;
+	font-family: "Frutiger LT Arabic 65 Bold";
   }
   .inner-page .fixed-header .big-menu li a{
 	color: #fff;
