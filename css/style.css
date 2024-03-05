@@ -843,6 +843,10 @@ background: linear-gradient(0deg, rgba(233,205,176,1) 42%, rgba(155,169,177,1) 1
     max-width: 100%;
 	transition: 0.5s;
   }
+  .service-details{
+	display: flex;
+	gap:30px
+  }
 
   .card__img:hover img{
 	transform: scale(1.2);
@@ -851,6 +855,14 @@ background: linear-gradient(0deg, rgba(233,205,176,1) 42%, rgba(155,169,177,1) 1
 	position: relative;
 	height: 200px;
 	overflow: hidden;
+  }
+  .serv-immg{
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+  }
+  .service-details .about-paragraph{
+	margin: 0;
   }
   .about-grid .card .card__img .card__overlay {
 	position: absolute;
@@ -1741,6 +1753,12 @@ html[dir="rtl"] .footer-accordion.active:after {
 	.services-grid{
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.service-details{
+		flex-wrap: wrap;
+	}
+	.service-details img{
+		order: -1;
+	}
 	.serv-title{
 		font-size: 14px;
 	}
@@ -2373,6 +2391,14 @@ html[dir="rtl"] .footer-accordion.active:after {
 	.about-section {
 		flex-wrap: nowrap;
 		align-items: start;
+	}
+	.service-details img{
+		order: 2;
+		width: 300px;
+		height: 300px;
+	}
+	.service-details{
+		flex-wrap: nowrap;
 	}
 .why-icon{
 	height: 51px;
