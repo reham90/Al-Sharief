@@ -19,7 +19,7 @@ a:hover {
 
 :root {
 	--main-color: #08064b;
-	--main-hover: rgb(222, 198, 13);
+	--main-hover: rgb(243, 220, 43);
 }
 
 img {
@@ -228,7 +228,7 @@ header {
 
 .nav-header {
 	display: flex;
-	justify-content: space-between;
+	
 	padding: 18px 0 0;
 	transition: all 0.3s ease-in-out;
 	align-items: center;
@@ -237,13 +237,13 @@ header {
 
 .big-menu li a {
 	color: #fff;
-	font-size: 14px;
+	font-size: 20px;
 	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
 
 }
 .fixed-header .big-menu li a{
-	color: #4e4e4e;
+	color: #fff;
 }
 
 @keyframes pulsate {
@@ -313,6 +313,7 @@ header {
 
 .navgition {
 	display: flex;
+	margin-inline-start: 100px;
 }
 
 .menu-item-has-children {
@@ -397,7 +398,7 @@ html[dir="ltr"] .first-level-link:after {
 }
 
 .fixed-nav {
-	background-color:#fff;
+	background-color:var(--main-color);
 	margin-top: -112px;
 	box-shadow: 0 3px 5px #00000030;
 	transition: all 0.3s ease-in-out;
@@ -406,11 +407,14 @@ html[dir="ltr"] .first-level-link:after {
 	transition: 0.5s;
 }
 .top-header:hover{
-	background-color: #fff;
+	background-color: var(--main-color);
 	box-shadow: 0 3px 5px #00000030;
 }
 .top-header:hover .big-menu li a{ 
-	color: #4e4e4e;
+	color: #fff;
+}
+.top-header:hover .sub-menu li a{ 
+	color: var(--main-color);
 }
 
 .fixed-nav .nav-header {
@@ -629,9 +633,21 @@ html[dir="ltr"] .caption-title {
 	margin: 0 0 32px;
 }
 .contact-form-div{
-	width: 555px;
-	margin: 0 auto;
+	
 	display: flex;
+	
+}
+.contact-form-div form{
+	width: 555px;
+	margin-inline-end: 100px;
+}
+.social-media .nav-foot-link{
+	color: var(--main-color) !important;
+	font-size: 18px !important;
+	font-family: "Frutiger LT Arabic 65 Bold";
+}
+.social-media .contact-icon{
+	color: var(--main-color);
 }
 .form-label{
 	color: var(--main-color);
@@ -1158,7 +1174,7 @@ html[dir="rtl"] .why-us-section {
 }
 
 .why-us-title {
-	color: #fff;
+	color: var(--main-color);
 	font-size: 30px;
 	text-align: center;
 	font-family: "alfont_com_AlFont_com_Frutiger-LT-Arabic-75-Black";
@@ -1182,7 +1198,7 @@ html[dir="rtl"] .why-us-section {
 }
 
 .why-us-text-title {
-	color: #fff;
+	color: var(--main-color);
 	font-size: 18px;
 	font-family: "Frutiger LT Arabic 65 Bold";
 	text-align: start;
@@ -1190,7 +1206,7 @@ html[dir="rtl"] .why-us-section {
 }
 
 .why-us-text-paragraph {
-	color: #fff;
+	color: var(--main-color);
 	font-size: 16px;
 	font-family: "Frutiger LT Arabic 45 Light";
 	line-height: 1.5;
@@ -1755,6 +1771,12 @@ html[dir="rtl"] .footer-accordion.active:after {
 	.fixed-nav .menu-item-has-children a:hover {
 		color: var(--main-hover) !important;
 	}
+	.nav-header{
+		justify-content: space-between;
+	}
+	.top-header:hover .big-menu li a{
+		color: var(--main-color);
+	}
 	.mb-20{
 		margin-bottom: 0 !important;
 	}
@@ -1775,6 +1797,14 @@ html[dir="rtl"] .footer-accordion.active:after {
 }
 .contact-form-div{
 	width: 100%;
+	flex-wrap: wrap;
+}
+.contact-form-div form{
+	width: 100%;
+	margin-inline-end: 0;
+}
+.social-media{
+	margin-top: 50px;
 }
 .certificates{
 	margin-top: 30px;
