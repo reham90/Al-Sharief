@@ -1270,12 +1270,23 @@ html[dir="rtl"] .why-us-section {
 .projects .swiper-btn {
 	top: 50%;
 }
-
+.w-50{
+	width: 50%;
+}
+.service-details .main-slider .swiper-btn{
+	display: none;
+}
+.service-details .main-slider{
+	height: 500px;
+}
+.service-details img{
+	height: 500px;
+}
 /* projects-section */
 
 /* clients-section */
 .clients-section {
-	padding: 0 0 195px;
+	padding: 100px 0 195px;
 	background: #ebeef0;
 }
 
@@ -1558,13 +1569,18 @@ html[dir="rtl"] .phone-icon {
 .contact-list {
 	margin-bottom: 0;
 }
+.text-start{
+	text-align: start;
+}
 
 .contact-icon {
 	color: #fff;
 	font-size: 18px;
 	margin-inline-end: 13px;
 }
-
+.service-projects{
+	margin-top: 50px;
+}
 .social-list {
 	list-style: none;
 	margin: 0;
@@ -2332,8 +2348,11 @@ html[dir="rtl"] .footer-accordion.active:after {
 	}
 
 	.about-paragraph {
-		width: 100%;
+		width: 100% !important;
 		max-width: 100%;
+	}
+	.service-details .main-slider{
+		width: 100% !important;
 	}
 
 	.vision-img {
